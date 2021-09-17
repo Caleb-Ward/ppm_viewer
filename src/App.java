@@ -44,18 +44,15 @@ public class App extends GameEngine {
 		try {
 			File file = new File(filePath);
 			Scanner scanner = new Scanner(file);
-			int lineNumber = 0;
 			int index = 0;
 			while (scanner.hasNextLine()) {
 				String lineData[] = scanner.nextLine().split("\\s");
 				if (lineData[0].contains("P")) {
 					format = lineData[0];
-					lineNumber++;
 					continue;
 				}
 				//ignore colour value while only working 256 colours # is comment
 				if (lineData.length < 2 || lineData[0].contains("#")) {
-					lineNumber++;
 					continue;
 				}
 				//only window dimensions line should have 2 integers
@@ -63,7 +60,6 @@ public class App extends GameEngine {
 					window[0] = Integer.parseInt(lineData[0]);
 					window[1] = Integer.parseInt(lineData[1]);
 					pixels = new Pixel[window[0]*window[1]];
-					lineNumber++;
 					continue;
 				}
 				//put values into temporary array then store in pixel once full
@@ -83,8 +79,7 @@ public class App extends GameEngine {
 							index++;
 						}
 					}
-				}
-				lineNumber++;
+				}		
 			}
 			scanner.close();
 		} catch (FileNotFoundException e) {
