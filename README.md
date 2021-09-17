@@ -1,23 +1,11 @@
-<<<<<<< HEAD
-## Getting Started
+## PPM Viewer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Currently only works for P3 format and 255 colours
+Files must be in the format
 
-## Folder Structure
+###Format
+###Window Size
+###Colour info
+###RGB values
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# ppm_viewer
-WIP ppm viewer written in Java
->>>>>>> d9098ceda973f6c261a7123e1878f25a7b680000
+## Will ignore comments which can be placed anywhere without issue
